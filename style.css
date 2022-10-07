@@ -1,118 +1,80 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background:linear-gradient(to right, #9EF9D8, #CAF6BF);
+    background:linear-gradient(to right, wheat, wheat, white);
 }
 
-.container{
+/* INPUT LIST */
+header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 40vh;
-
-}
-
-.head{
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    width: 40em;
-    height: 3.5em;
-    background-color: rgba(10, 10, 10, 0.2);
-    border-radius: 20px;
+    top: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    height: 5em;   
 }
 
-.head input{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    background-color: rgba(0,0,0,0);
-    letter-spacing: 2px;
-    position: absolute;
-    text-transform: uppercase;
-    width: 32em;
-    height: 80%;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    left: 50px;
-}
-.head input:hover{
-    border-bottom: 2px solid black;
-}
-
-.head:hover{
-    border: 2px solid black;
-}
-.head input::placeholder{
-    font-size: 18px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.head button{
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0);    
-    outline: none;
-    text-decoration: none;
-    border: none;
-    font-size: 1.2em;
+header h1{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(190, 190, 190);
+    margin-bottom: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* INSERT TASK */
 
-.body{
+form{
     display: flex;
-    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header input,button{
+    appearance: none;
+    border: none;
+    outline: none;a
+    background: none;
+}
+
+#input-task-list::placeholder{
+    color: white;
+    letter-spacing: 0.2em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#input-task-list{
+    flex: 1 1 0%;
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+#task-submit{
+    font-size: 0.8em;
+    color: rgb(61, 60, 60); ;
+    cursor:pointer;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-family'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:none;
+}
+
+/* TASK LIST */
+
+main{
+    display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    width: 25rem;
-    top: 30vh;
-    height: 3em;
-    border: 2px solid black;
-    background-color: rgba(10, 10, 10, 0.2);
-    border-radius: 10px;
-}
-
-#list{
-    width: 18rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: block;
-    font-size: 1.3em;
-    word-spacing: 10px;
-    letter-spacing: 2px;
-    color:black;
-    font-weight: ;
-}
-
-.body button{
-    background-color: rgba(0, 0, 0, 0);
-    right: 5px;
-    margin-right: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    border: none; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-}
-
-.body button:hover{
-    color: wheat;
-    font: 100%;
+    justify-content: center;
+    margin-top: 90px;
+    font-size: em;
 }
 
