@@ -6,11 +6,13 @@
 
 body{
     background:linear-gradient(to right, wheat, wheat, white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* INPUT LIST */
 header{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -39,7 +41,7 @@ form{
 header input,button{
     appearance: none;
     border: none;
-    outline: none;a
+    outline: none;
     background: none;
 }
 
@@ -61,25 +63,100 @@ header input,button{
     color: rgb(61, 60, 60); ;
     cursor:pointer;
     text-transform: capitalize;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
     font-weight: 1000;
     font-family'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background:none;
     padding-left: 1em;
     color: wheat;
-    background-image: linear-gradient(to right, gray, rgb(68, 67, 64) , gray);
+    background-image: linear-gradient(to right, gray,rgb(161, 159, 155), gray);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: 0.4s;
+}
+
+#task-submit:hover{
+    opacity:0.8;
+}
+
+#task-submit:active{
+    opacity: 0.67;
 }
 
 /* TASK LIST */
 
 main{
-    display: flex;
-    position: relative;
-    text-align: center;
-    justify-content: center;
+    flex: 1 1 0%;
     margin-top: 90px;
-    font-size: em;
+    max-width: 90%;
+    width: 100%;
+}
+
+.task{
+    padding: 1rem;
+}
+
+.tasks h2{
+    font-size: 1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    padding-top: 1rem;
+    margin-bottom: 0.8rem;
+    margin-left: 5%;
+}
+
+.tasks .task{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: 1rem;
+    background-color: rgb(71, 69, 69);
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 0.5rem;
+}
+
+.text{
+    position: absolute;
+    font-size: 1rem;
+    left: 8%;
+    display: block;
+    transition: 0.4s;
+    background-color: rgb(71, 69, 69);
+    border: none;
+    color: white;
+    width: 55%;
+    
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+}
+
+
+.action{
+    background-color: rgb(71, 69, 69);
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 70%;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+
+
+.action button{
+    right: 3;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(to right, gray, wheat);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
